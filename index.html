@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Company | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div id="nav">
+        <div id="nav-i">
+            <a class="nav-i" id="nav-i1"
+               onclick="window.scrollTo(0, document.getElementById('store').offsetTop - 240);">Store</a>
+            <a class="nav-i" id="nav-i2" onclick="shrink()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </a>
+        </div>
+        <div id="nav-items">
+            <!-- add additional items without any care about spacing (minimum are 2 elements for the right spacing) -->
+            <a onclick="window.scrollTo(0, document.getElementById('store').offsetTop - 240);"
+               class="nav-items">Store</a>
+            <a onclick="blockAutoScroll = true; window.scrollTo(0, document.getElementById('news').offsetTop - 240);setTimeout(function() {blockAutoScroll = false;}, blockTimeout)"
+               class="nav-items">News</a>
+            <a onclick="blockAutoScroll = true; window.scrollTo(0, document.getElementById('about').offsetTop - 240);setTimeout(function() {blockAutoScroll = false;}, blockTimeout)"
+               class="nav-items">About</a>
+            <a onclick="grow()" class="nav-items">
+                <div style="margin-left: calc(50%)" class="menu-line"></div>
+                <div style="margin-left: calc(50%)" class="menu-line"></div>
+                <div style="margin-left: calc(50%)" class="menu-line"></div>
+            </a>
+        </div>
+    </div>
+    <div id="logo">
+        <a href="">Your Company</a>
+    </div>
+</nav>
+<main>
+    <div id="hero-picture"></div>
+    <div class="rgb-box" id="store">
+        <h2>Store</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="apple.png" alt="Apfel">
+                <span class="title">Äpfel</span>
+                <span class="description">Hochwertige Äpfel aus der Region. Immer frisch und preiswert</span>
+                <span class="price">3,19 € / 1 kg</span>
+                <div class="buttons">
+                    <span class="button left">Details</span>
+                    <span class="button right">Kaufen</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pear.png" alt="zwei Birnen">
+                <span class="title">Birnen</span>
+                <span class="description">Hochwertige Birnen aus der Region. Immer frisch und preiswert</span>
+                <span class="price">2,29 € / 1 kg</span>
+                <div class="buttons">
+                    <span class="button left">Details</span>
+                    <span class="button right">Kaufen</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="strawberries.png" alt="Erdbeeren">
+                <span class="title">Erdbeeren</span>
+                <span class="description">Hochwertige Erdbeeren aus der Region. Immer frisch und preiswert</span>
+                <span class="price">4,99 € / 1 kg</span>
+                <div class="buttons">
+                    <span class="button left">Details</span>
+                    <span class="button right">Kaufen</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="mango.png" alt="Mango">
+                <span class="title">Mango</span>
+                <span class="description">Mangos von hoher Qualität. Immer frisch und preiswert</span>
+                <span class="price">1,19 € / 1 Mango</span>
+                <div class="buttons">
+                    <span class="button left">Details</span>
+                    <span class="button right">Kaufen</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rgb-box" id="news">
+        <h2>News</h2>
+        <div style="width: calc(90vw - 235px - 50px - 40px); margin-left: calc(235px + 50px + 20px); margin-top: -500px">
+            <div class="cards">
+                <div class="card">
+                    <span class="title">Effektives Duo für ihre Projekte</span>
+                    <span class="text">In der ständig wachsenden Welt der Technologie und Informatik bringen wir, zwei aufstrebende Schüler namens Alexandra Siemer und Björn Thies, frischen Wind in die Szene. Mit unserer Leidenschaft für IT und unserem außergewöhnlichen Teamwork sind wir auf der Suche nach einem Schülerjob.
+Mit einem Auge für Detail und einem Gespür für kreative Lösungen haben wir bereits an verschiedenen schulischen Projekten erfolgreich zusammengearbeitet. Nun sind wir bereit, unsere Fähigkeiten auf die nächste Stufe zu heben und echte Weltanwendungen im IT-Bereich zu erkunden.</span>
+                </div>
+                <div class="card">
+                    <span class="title">Remote-Work</span>
+                    <span class="text">Unser Wunsch, von zu Hause aus zu arbeiten, spiegelt nicht nur den aktuellen Trend zur Remote-Arbeit wider, sondern unterstreicht auch unsere Selbstorganisation und unsere Fähigkeit, in einer virtuellen Umgebung produktiv zu sein. Wir möchten Sie auch darauf hinweisen, dass wir sehr flexibel sind und gerne auf Ihre individuellen Wünsche eingehen. Wenn Sie es vorziehen, können wir uns auch persönlich mit Ihnen treffen, sei es für eine detaillierte Planung oder um Ihre Bedürfnisse besser zu verstehen. Wir sind bereit, alle notwendigen Schritte zu unternehmen, um sicherzustellen, dass die Arbeitsumgebung optimal an Ihre Bedürfnisse angepasst ist.</span>
+                </div>
+                <div class="card">
+                    <span class="title">Kontinuierliches Lernen im Fokus</span>
+                    <span class="text">Unsere Bildungsreise geht weiter. Wir verstehen, dass echtes Wachstum keine Schulgrenzen kennt. Neben dem Unterricht haben wir erkannt, wie wichtig es ist, selbstgesteuert relevante Themen zu erkunden. Diese Haltung unterstreicht unsere Anpassungsfähigkeit in einer sich ständig verändernden Gesellschaft. Unser Engagement für lebenslanges Lernen inspiriert und verdeutlicht, dass Neugierde der Schlüssel zur kontinuierlichen Weiterentwicklung ist.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rgb-box" id="about" style="height: 500px">
+        <h2 class="shadow">About</h2>
+        <h2 class="outline">About</h2>
+        <div class="cards">
+            <div class="card">
+                <span class="title">Wir sind</span>
+                <span class="text">Alexandra<br>& Björn <nobr>(18 Jahre alt)</nobr></span>
+            </div>
+            <div class="card">
+                <span class="title">Schule</span>
+                <span class="text">Berufliches Gymnasium Elmshorn <nobr>(12. Klasse)</nobr></span>
+            </div>
+            <div class="card">
+                <span class="title">Schwerpunkt</span>
+                <span class="text">Wirtschafts&shy;informatik & Mathematik</span>
+            </div>
+            <div class="card">
+                <span class="title">Stärken</span>
+                <span class="text">kreativ<br>organisiert<br>teamfähig<br>zuverlässig</span>
+            </div>
+            <div class="card">
+                <span class="title">Extra</span>
+                <span class="text">jahrelange Programmier&shy;kenntnisse</span>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
